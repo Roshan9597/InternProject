@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    color: #2f2f2f;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+}
+
+h2 {
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+}
+
+h3 {
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+}
+
+.services h3 {
+    border-bottom: 2px solid #f56a6a;
+
+}
+
+.services h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.55;
+    margin-top: 0.5em;
+    color: #696969;
+}
+
+
+header .top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+
+.hero-text .cta {
+    text-decoration: none;
+    color: #efefef;
+    display: block;
+}
+
+header .hero-text {
+    order: 1;
+}
+
+header .top-nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    padding: 0.3em 0;
+}
+
+header .top-nav ul li a:hover {
+    border-bottom: 1px solid #f56a6a;
+}
+
+main .services h3 {
+    margin: 1em 0;
+    padding: 0.5em 0;
+}
+
+main .services,
+header .hero,
+main .content {
+    margin: 6em 0;
+}
+
+main .content h2 {
+    margin-top: 1em;
+}
+
+span {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header .top-nav nav ul li {
+    display: inline;
+    margin: 0.5em;
+}
+
+header .hero {
+
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    margin: 2em 0;
+    flex-direction: column;
+}
+
+
+header .hero-text p {
+    color: #2f2f2f;
+}
+
+main .content {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.cta {
+    text-align: center;
+    padding: 1em;
+    margin: 2em 0;
+    background-color: darkblue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+.cta a {
+    color: inherit;
+    text-decoration: none;
+    color: #fff;
+}
+
+.cta:hover {
+    background-color: #f56a6a;
+    transition: 0.5s ease-in;
+
+}
+
+.services .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    padding: 2em 0;
+
+}
+
+.services .box {
+    margin: 2em 0;
+}
+
+
+.services p {
+    font-size: 0.95em;
+}
+
+
+.services-images,
+.services h3 {
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+.services img {
+    height: 100px;
+    width: 100px;
+}
+
+.learnbtn {
+    text-align: center;
+    margin: 3em 0;
+    font-size: 0.875em;
+}
+
+.learnbtn a {
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 1em 0.75em;
+    box-shadow: 3px 2px 2px 2px #696969;
+}
+
+.learnbtn a:hover {
+    background-color: #f56a6a;
+    transition: 0.2s ease-in;
+    color: #efefef;
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #2f2f2f;
+}
+
+footer section {
+    text-align: center;
+
+    padding: 2em 0;
+}
+
+footer nav {
+    margin-top: 1em;
+}
+
+footer .contact h3 {
+    margin-bottom: 1em;
+}
+
+footer nav ul li {
+    margin: 1.5em 0;
+    list-style: none;
+    font-size: 0.75em;
+    display: inline;
+    margin: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 0.75em;
+}
+
+/* Mobile View */
+
+@media (min-width: 768px) {
+    #wrapper {
+        max-width: 1200px;
+        margin: 1em auto;
+        box-shadow: 3px 3px 3px 3px lightgray;
+        padding: 2em 4em;
+    }
+
+
+    header .hero {
+        height: 80vh;
+    }
+
+    .services .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4em;
+    }
+
+    .services .box {
+        padding: 2em;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header .hero {
+        max-width: 100%;
+        flex: none;
+        flex-direction: row;
+    }
+
+    header .hero-text {
+        order: 0;
+        max-width: 40em;
+    }
+
+    header .hero-text .cta {
+        display: inline-block;
+    }
+
+    iframe {
+        margin: 1em 0;
+    }
+
+    main .content {
+
+        flex-direction: row;
+    }
+
+    main .content-text {
+        margin-left: 4em;
+        max-width: 40em;
+    }
+
+    main .content-text .cta {
+        display: inline-block;
+    }
+
+    main .services .box {
+        box-shadow: 1px 2px 8px 1px lightgray;
+        border-radius: 5px;
+    }
+
+    /* This is the resources page */
+
+    #resources {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    header .resources-img {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    main .rbox {
+        padding: 3em 0;
+
+    }
+
+    #resources h1 {
+        font-size: 3em;
+        border-bottom: 2px solid #f56a6a;
+        text-align: center;
+        letter-spacing: 0.1em;
+        margin: 0.5em 0;
+    }
+
+    .resources-grid h2 {
+        border-bottom: 2px solid #f56a6a;
+        display: inline-block;
+    }
+
+    .resources-grid h2 + p {
+        margin-top: 1.2em;
+    }
+
+    .resources-grid p {
+        margin: 2em 0;
+    }
+
+    main .morebtn {
+        text-decoration: none;
+        border-bottom: 1px solid #696969;
+        padding: 0.5em 0;
+        margin: 2em 0;
+    }
+
+    /* This is the Content Page */
+
+    #paragraph-wrapper {
+        max-width: 768px;
+        margin: 0 auto;
+        box-shadow: 2px 2px 2px 2px #3f3f3f;
+        padding: 1.2em 2em;
+        border-radius: 5px;
+    }
+
+    .paragraph h1,
+    h2 {
+        border-bottom: 2px solid #f56a6a;
+        display: inline;
+    }
+    
+    .paragraph2 li {
+        padding-top: 1em;
+    }
+
+    #paragraph-wrapper div {
+        margin: 4em 0;
+    }
+
+    /* This is the about us page */
+    
+    main .team h1 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border-bottom: 2px solid #f56a6a;
+        margin-top: 2em;
+        
+    }
+    
+    main .members {
+        text-align: center;
+        padding: 1em;
+
+}
+
+/* Desktop View */
+
+@media (min-width: 1200px) {
+    #wrapper {
+        max-width: 1200px;
+        margin: 1em auto;
+    }
+
+    header .hero {
+        height: 70vh;
+    }
+
+    header .hero-text {
+        max-width: 35em;
+    }
+
+    header .cta {
+        display: inline-block;
+    }
+
+    main .content-text {
+        max-width: 65em;
+        margin-left: 2em;
+    }
+
+    main .cta {
+        display: inline-block;
+    }
+
+    .keywords {
+        grid-template-columns: repeat(3, 3fr);
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* This is for resources page  */
+
+    #resources {
+        max-width: 960px;
+        margin: 0 auto;
+        box-shadow: 2px 2px 3px 3px #2f2f2f;
+        padding: 2em;
+        margin: 2em auto;
+    }
+
+    header .resources-img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    main .rbox {
+        padding: 2em 0;
+
+    }
+
+    #resources h1 {
+        font-size: 3em;
+        border-bottom: 2px solid #f56a6a;
+        text-align: center;
+        letter-spacing: 0.1em;
+        margin: 0.5em 0;
+    }
+
+    .resources-grid h2 {
+        border-bottom: 2px solid #f56a6a;
+        display: inline-block;
+
+    }
+
+    .resources-grid h2 + p {
+        margin-top: 1.2em;
+    }
+
+    .resources-grid p {
+        margin: 2em 0;
+    }
+
+    main .morebtn {
+
+        text-decoration: none;
+        border-bottom: 1px solid #696969;
+        padding: 0.5em 0;
+    }
+
+    /* This is for the content page */
+
+    #paragraph-wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        box-shadow: 2px 2px 2px 2px #3f3f3f;
+        padding: 1.2em 2em;
+        border-radius: 5px;
+    }
+
+    .paragraph h1,
+    h2 {
+        border-bottom: 2px solid #f56a6a;
+        display: inline;
+    }
+    
+    .paragraph2 li {
+        padding-top: 1em;
+    }
+
+    #paragraph-wrapper div {
+        margin: 4em 0;
+    }
+
+    /* This is the about us page */
+
+    #member-wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    main .team h1 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border-bottom: 2px solid #f56a6a;
+        margin-top: 2em;
+        
+    }
+    
+    main .team-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        margin-top: 2em;
+        padding: 2em 0;
+    }
+    
+    main .members {
+        text-align: center;
+    }
+
+}
